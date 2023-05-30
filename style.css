@@ -30,7 +30,7 @@
 .link{
   text-decoration: none;
   font-weight: 700;
-  font-size:14px;
+  font-size:15px;
 }
 .link:hover{
   color:#006241;
@@ -61,7 +61,7 @@ nav{
   opacity: 0.7;
 }
 .location_store{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -78,15 +78,13 @@ nav{
 }
 
 /* MAIN */
-.adventure{
-  margin-top: 20px;
+.adventure,.baristas,.frappuccino,.sunshine{
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: 550px;
-  
 }
-
-.adventure_find{
+.adventure_find,.baristas_text{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -102,7 +100,7 @@ nav{
   font-size: 50px;
   letter-spacing: 3px;
 }
-.adventure_para{
+.adventure_para,.baristas_para,.frappuccino_para,.sunshine_para{
   color: inherit;
   font-size: 24px;
   font-weight: 400px;
@@ -111,7 +109,10 @@ nav{
   margin-bottom: 30px;
   line-height: 1.5;
 }
-.adventure_button{
+.baristas_para{
+  width:69%;
+}
+.adventure_button,.barista_btn,.frappuccino_btn{
   padding: 10px 20px;
   border-radius: 20px;
   border:1px solid white;
@@ -122,13 +123,57 @@ nav{
   cursor: pointer;
   transition: 0.2s;
 }
-
 .adventure_button:hover{
   background-color: #024730;
 }
-.adventure_game_img{
+.barista_btn:hover{
+  background-color: #024730;
+}
+.adventure_game_img,.barista_img,.frappuccino_img,.ice_drinks_img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-
+}
+.baristas_heading,.frappuccino_heading,.sunshine_heading{
+  width: 75%;
+  margin:50px 0 30px 0;
+  text-align: center;
+  color: inherit;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+.frappuccino_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #D4E9E2;
+}
+.frappuccino_heading{
+  color: #1E3932;
+  margin:120px 0 30px 0;
+  letter-spacing:0;
+}
+.frappuccino_para,.sunshine_para{
+  color: #1E3932;
+}
+.frappuccino_btn{
+  background-color: #D4E9E2;
+  color: #1E3932;
+  border: 1px solid #1E3932;
+}
+.frappuccino_btn:hover{
+  background-color: #becfc9;
+}
+.sunshine_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #EB81A5;
+}
+.sunshine_heading{
+  color: #1E3932;
+  margin:90px 0 30px 0;
+  letter-spacing:3;
 }
