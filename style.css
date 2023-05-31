@@ -244,7 +244,8 @@ nav{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:200px;
-  box-shadow: 0px -1px 4px -1px rgba(0,0,0,0.5) inset;
+  box-shadow: 0px -1px 4px -1px rgba(0,0,0,0.8) inset;
+
 }
 .warranty_para{
   font-size: 1em;
@@ -258,12 +259,79 @@ nav{
 .others{
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 100px;
   line-height: 50px;
-  padding:10px; 
+  padding:10px 70px 40px; 
+  gap: 20px;
 }
 .about_us{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:left;
 }
+.others_link{
+  text-decoration: none;
+  color: rgb(81, 78, 78);
+  font-weight: 500;
+}
+.others_link:hover{
+  color: black;
+}
+.Social_impact{
+  display: flex;
+  flex-direction: column;
+}
+hr{
+  width:90%;
+  margin: 0 auto;
+}
+.socials{
+  padding: 40px 70px;
+  list-style: none;
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  border: 1px solid salmon;
+  
+}
+
+.page {
+  margin:100px auto 0; 
+  width:400px; 
+  display:flex; 
+  justify-content:space-between;
+  border: 1px solid #000;
+}
+
+/* CIRCLE
+.circle-wrapper {width:50px;} */
+
+/* .circle { width:50px; height:50px; border-radius:50%; position:relative; background-color:#333; transition:all .25s ease; padding:10px;} */
+/* 
+.circle:before {content:""; height:20px; width:20px; border:2px solid #333; position:absolute; border-radius:50%; left:-5px; top:-5px; transition:all .25s ease;} */
+
+/* CIRCLE HOVERS */
+
+
+/* .social:hover:before {width:50px; height:50px; margin-top:-2px; margin-left:-2px;} */
+
+/* BRAND ICONS */
+/* .fab {font-size:20px; color:#fff;} */
+/* 
+.spotify {}
+.spotify:before {border-color:#C92228;} */
+.social:hover{
+  padding:15px; margin-top:-20px; margin-left:-20px; cursor:pointer; border-radius:50%;background-color:rgb(200, 197, 197);transition: 0.3s
+}
+
+.twitter-icon {background-color:#00aced;}
+.twitter-icon:before {border-color:#00aced;}
+
+.facebook-icon {background-color:#3B5998;}
+.facebook-icon:before {border-color:#3B5998;}
+
+.instagram-icon {background-color:#d0d8d5;}
+.instagram-icon:before {border-color:#d0d8d5;}
+
+.youtube-icon {background-color:#d0d8d5;}
+.youtube-icon:before {border-color:#d0d8d5;}
